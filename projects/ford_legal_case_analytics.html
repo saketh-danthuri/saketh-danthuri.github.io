@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ford Motor Company — Legal Case Management & Budget Analytics</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #0f172a;
+      --fg: #e5e7eb;
+      --muted:#94a3b8;
+      --accent:#22c55e; /* green */
+      --accent-soft:#94ffa3;
+      --border:#1f2937;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg); color: var(--fg); line-height:1.6;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 16px 64px; }
+    header { display:flex; align-items:center; gap:16px; margin-bottom: 18px; }
+    h1 { color: var(--accent); font-size: 1.9rem; margin: 0; letter-spacing:.2px; }
+    .badge { display:inline-block; padding:4px 10px; border:1px solid var(--border); border-radius:999px;
+             background:linear-gradient(180deg, rgba(34,197,94,.15), rgba(34,197,94,.05));
+             margin-right:8px; font-size:.85rem; }
+    section { background: var(--card); border:1px solid var(--border); border-radius:16px; padding:20px; margin:16px 0; }
+    section h2 { color: var(--accent); margin-top:0; font-size:1.25rem; }
+    ul { margin: 0.25rem 0 0 1.2rem; }
+    .grid { display:grid; grid-template-columns: 1.2fr .8fr; gap:16px; }
+    .mono { color: var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.92rem; }
+    .pill { display:inline-block; padding:6px 10px; border:1px solid var(--border); border-radius:999px; margin:4px 6px 0 0; }
+    .diagram { background:#07101e; border:1px dashed var(--accent-soft); border-radius:14px; padding:10px; }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); text-decoration:none; }
+    .two-col { columns: 2; column-gap: 32px; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } .two-col { columns:1; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Ford Motor Company — Legal Case Management & Budget Analytics</h1>
+    </header>
+  <section>
+      <h2>Tech Stack</h2>
+      <p class="mono">
+        SQL · Python (Pandas, NumPy) · Tableau · ETL Automation · Scheduling
+      </p>
+   </section>
+    <section>
+      <h2>Project Snapshot</h2>
+      <ul>
+        <li>Developed a case tracking & budget monitoring system across 50+ outside counsel firms to improve visibility into progress and financial performance.</li>
+        <li>Automated ingestion from case logs with SQL/Python; reduced manual status updates by <b>70%</b>.</li>
+        <li>Tableau dashboards improved on-time case resolution by <b>25%</b> and accelerated monthly reporting from <b>2 weeks → 2 days</b>.</li>
+        <li>KPIs (budget variance, spend per case, avg. resolution time) enabled <b>15%</b> savings in counsel contracts.</li>
+        <li>Real-time alerts for overruns & delays cut response time by <b>30%</b>.</li>
+      </ul>
+    </section>
+
+    <div class="mono">
+      <section>
+        <h2>Business Problem</h2>
+        <ul>
+          <li>Hundreds of active cases with outside counsel.</li>
+          <li>Low visibility into firm assignment, progress timelines, and budget adherence.</li>
+          <li>Manual spreadsheets led to delays, errors, and weak performance tracking.</li>
+        </ul>
+      </section>
+
+      <section class="diagram">
+        <h2>Use Case Diagram</h2>
+        <p class="muted" style="margin-top:-6px">Actors: Legal Handler, Outside Counsel, Leadership</p>
+        <!-- Inline SVG -->
+        
+<svg width="900" height="520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .actor { fill:#111; stroke:#7CFC00; stroke-width:2; }
+      .system { fill:#0f172a; stroke:#22c55e; stroke-width:2; }
+      .label { fill:#e5e7eb; font: 14px sans-serif; }
+      .title { fill:#22c55e; font: 18px sans-serif; font-weight:700; }
+      .uc { fill:#0b1220; stroke:#94ffa3; stroke-width:1.5; rx:12; }
+    </style>
+  </defs>
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" class="title">Use Case Diagram — Legal Case Management & Budget Analytics</text>
+
+  <!-- Actors -->
+  <rect x="40" y="90" width="150" height="60" class="actor" rx="8"/>
+  <text x="115" y="125" text-anchor="middle" class="label">Legal Handler</text>
+
+  <rect x="40" y="200" width="150" height="60" class="actor" rx="8"/>
+  <text x="115" y="235" text-anchor="middle" class="label">Outside Counsel</text>
+
+  <rect x="40" y="310" width="150" height="60" class="actor" rx="8"/>
+  <text x="115" y="345" text-anchor="middle" class="label">Leadership</text>
+
+  <!-- System Boundary -->
+  <rect x="260" y="80" width="580" height="360" class="system" rx="16"/>
+  <text x="550" y="105" text-anchor="middle" class="label">Case Mgmt & Budget Analytics System</text>
+
+  <!-- Use cases inside system -->
+  <rect x="300" y="130" width="230" height="44" class="uc"/>
+  <text x="415" y="158" text-anchor="middle" class="label">Assign / Track Cases</text>
+
+  <rect x="300" y="200" width="230" height="44" class="uc"/>
+  <text x="415" y="228" text-anchor="middle" class="label">Budget Monitor (Spend vs Allocation)</text>
+
+  <rect x="300" y="270" width="230" height="44" class="uc"/>
+  <text x="415" y="298" text-anchor="middle" class="label">Alerts (Overruns, Delays)</text>
+
+  <rect x="560" y="160" width="240" height="44" class="uc"/>
+  <text x="680" y="188" text-anchor="middle" class="label">Firm Benchmarking & KPIs</text>
+
+  <rect x="560" y="240" width="240" height="44" class="uc"/>
+  <text x="680" y="268" text-anchor="middle" class="label">Executive Dashboards</text>
+
+  <!-- Connectors from actors to use cases -->
+  <line x1="190" y1="120" x2="300" y2="152" stroke="#94ffa3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="190" y1="120" x2="300" y2="222" stroke="#94ffa3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <line x1="190" y1="230" x2="300" y2="222" stroke="#94ffa3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="190" y1="230" x2="300" y2="292" stroke="#94ffa3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <line x1="190" y1="340" x2="560" y2="262" stroke="#94ffa3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="190" y1="340" x2="560" y2="182" stroke="#94ffa3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L6,3 z" fill="#94ffa3" />
+    </marker>
+  </defs>
+</svg>
+
+      </section>
+    </div>
+
+    <section>
+      <h2>Solution Overview</h2>
+      <div class="two-col">
+        <p><b>1) Data Ingestion & Processing</b><br/>
+        Pulled data from Ford’s case management system into SQL tables; cleaned & standardized case records (ID, firm, budget, spend-to-date, deadlines). Automated daily ETL with Python (Pandas, NumPy).</p>
+
+        <p><b>2) Metrics & KPIs</b><br/>
+        Defined KPIs: <i>Budget variance</i> (actual – allocated), <i>on-time completion rate</i>, <i>avg. resolution time per firm</i>, <i>cost per case</i> across firms.</p>
+
+        <p><b>3) Visualization in Tableau</b><br/>
+        Built: <i>Case Tracker</i> (stage), <i>Budget Monitor</i> (spend vs allocation), <i>Firm Comparison</i> (benchmarking), <i>Backlog Report</i> (stuck/delayed). Filters for firm, case type, region.</p>
+
+        <p><b>4) Automation & Alerts</b><br/>
+        Notifications for budget overruns & delayed cases; proactive triage and remediation.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Impact</h2>
+      <ul>
+        <li>Manual tracking effort reduced by <b>70%</b>.</li>
+        <li>On-time case resolution improved by <b>25%</b>.</li>
+        <li><b>15%</b> savings negotiated with underperforming firms using benchmarks.</li>
+        <li>Monthly reporting time cut from <b>2 weeks</b> to <b>2 days</b>.</li>
+        <li>Executive visibility into <b>100+</b> active cases at a glance.</li>
+      </ul>
+    </section>
+
+  </div>
+</body>
+</html>

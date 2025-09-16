@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>Covid Deaths Analysis</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #000 !important;
+        color: #fff !important;
+      }
+      .portfolio-info h2, .portfolio-info h4, .portfolio-info h5 {
+        color: #12d640 !important;
+      }
+      a {
+        color: #12d640;
+      }
+      .alert-info {
+        background-color: #222 !important;
+        color: #fff !important;
+        border-color: #12d640;
+      }
+    </style>
+</head>
+  
+<body>
+  
+<!-- ======= Portfolio Details ======= -->
+<main id="main">
+  <div id="portfolio-details" class="portfolio-details">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 portfolio-info">
+          <br>
+          <h2>Covid Deaths Analysis (SQL + Tableau)</h2>
+          <ul>
+            <li><strong>Tech Stack</strong>: SQL, Tableau</li>
+            <li><strong>Github URL</strong>: <a href="https://github.com/saketh-danthuri/covid-death-analysis-sql-tableau" target="_blank">Project Link</a></li>
+            <li><strong>Dashboard Link</strong>: <a href="https://public.tableau.com/app/profile/saketh.danthuri/viz/CovidDeathsDashboard_17564850646880/Dashboard1" target="_blank">Open Dashboard</a></li>
+          </ul>
+
+          <p>
+            Analyzing global COVID-19 impact through interactive Tableau dashboards—tracking total cases,
+            deaths, infection percentages, and forecasting trends using SQL for data preparation and Tableau for visualization.
+          </p>
+
+          <h4>Business Objective</h4>
+          <p>Governments, healthcare organizations, and policymakers faced critical challenges during the pandemic:</p>
+          <ul>
+            <li><strong>Tracking Global Impact:</strong> Monitor total cases and deaths across regions.</li>
+            <li><strong>Resource Allocation:</strong> Identify continents and countries with the highest mortality burden.</li>
+            <li><strong>Forecasting Infections:</strong> Understand infection trajectories to anticipate healthcare needs.</li>
+            <li><strong>Public Awareness:</strong> Provide clear, data-driven insights to inform public policy and citizen behavior.</li>
+          </ul>
+          <p>The objective of this dashboard is to consolidate COVID-19 data into actionable insights for better decision-making, preparedness, and transparent communication.</p>
+
+          <h4>Dashboard</h4>
+          <p><!-- Per request: no dashboard link here. --></p>
+          <!-- IMAGE PLACEHOLDER: Full dashboard screenshot -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="portfolio-img text-center">
+                <img src="../assets/img/covid_deaths/dashboard.png" class="img-fluid" alt="Dashboard Overview (placeholder)">
+                <p class="mt-2"><em>Dashboard overview (replace <code>dashboard.png</code> with your exported Tableau image).</em></p>
+              </div>
+            </div>
+          </div>
+
+          <h4>Key Features</h4>
+          <h5 class="mt-3">🌍 Global Numbers (KPI Cards)</h5>
+          <ul>
+            <li><strong>Total Cases:</strong> 150,574,977</li>
+            <li><strong>Total Deaths:</strong> 3,180,206</li>
+            <li><strong>Death Percentage:</strong> 2.11%</li>
+          </ul>
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="portfolio-img">
+                <img src="../assets/img/covid_deaths/kpis.png" class="img-fluid" alt="KPI Cards (placeholder)">
+                <p class="mt-2"><em>KPI cards for total cases, deaths, and death percentage.</em></p>
+              </div>
+            </div>
+          </div>
+
+          <h5 class="mt-4">🗺 Percentage Population Infected per Country (Map)</h5>
+          <ul>
+            <li>Countries like the U.S., U.K., and parts of Europe show higher infection rates.</li>
+            <li>Infection spread patterns vary by geography and containment policies.</li>
+          </ul>
+          <div class="row">
+            <div class="col-lg-8 col-md-10">
+              <div class="portfolio-img">
+                <img src="../assets/img/covid_deaths/map_infected.png" class="img-fluid" alt="Percentage Population Infected Map (placeholder)">
+                <p class="mt-2"><em>Map of percent population infected (replace with your map export).</em></p>
+              </div>
+            </div>
+          </div>
+
+          <h5 class="mt-4">📊 Total Deaths per Continent (Bar Chart)</h5>
+          <ul>
+            <li>Europe recorded the highest total deaths (&gt; 1 million).</li>
+            <li>North and South America follow closely behind.</li>
+            <li>Africa and Oceania reported significantly lower totals.</li>
+          </ul>
+          <div class="row">
+            <div class="col-lg-8 col-md-10">
+              <div class="portfolio-img">
+                <img src="../assets/img/covid_deaths/bar_continents.png" class="img-fluid" alt="Total Deaths per Continent Bar Chart (placeholder)">
+                <p class="mt-2"><em>Bar chart of total deaths by continent.</em></p>
+              </div>
+            </div>
+          </div>
+
+          <h5 class="mt-4">📈 Percent Population Infected Timeline (with Forecast)</h5>
+          <ul>
+            <li>United States reached nearly 9% infection by April 2021, with forecasts up to ~19%.</li>
+            <li>United Kingdom projected ~14.93% by late 2021.</li>
+            <li>Canada, Mexico, India, and China maintained relatively lower percentages.</li>
+            <li>Forecast bands provide confidence intervals for future infection growth.</li>
+          </ul>
+          <div class="row">
+            <div class="col-lg-10 col-md-12">
+              <div class="portfolio-img">
+                <img src="../assets/img/covid_deaths/timeline_forecast.png" class="img-fluid" alt="Percent Population Infected Timeline with Forecast (placeholder)">
+                <p class="mt-2"><em>Timeline of percent population infected with forecast intervals.</em></p>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="mt-4">Tools &amp; Technologies</h4>
+          <ul>
+            <li><strong>SQL:</strong> Data extraction, transformation, and cleaning.</li>
+            <li><strong>Tableau:</strong> Interactive dashboards, KPI visualizations, geo-mapping, forecasting.</li>
+            <li><strong>Geo-Mapping:</strong> Map layer with OpenStreetMap/Mapbox.</li>
+            <li><strong>Forecasting Model:</strong> Time-series projection for infection percentages.</li>
+          </ul>
+
+          <h4 class="mt-4">Insights &amp; Recommendations</h4>
+          <ul>
+            <li><strong>Europe &amp; Americas:</strong> Require continued monitoring and resource allocation due to higher death counts.</li>
+            <li><strong>Developing Regions:</strong> Lower reported deaths may reflect limited access or underreporting; invest in testing and reporting infrastructure.</li>
+            <li><strong>U.S. &amp; U.K.:</strong> Trends highlight the importance of vaccination campaigns and early public health interventions.</li>
+            <li><strong>Policy Action:</strong> Use forecasted growth to strengthen hospital capacity, ensure vaccine supply, and implement timely containment measures.</li>
+          </ul>
+
+          <h4 class="mt-4">Real-World Applications</h4>
+          <ul>
+            <li><strong>Healthcare Systems:</strong> Anticipate ICU bed demand and ventilator needs.</li>
+            <li><strong>Government Agencies:</strong> Guide policy on restrictions, aid distribution, and vaccination rollouts.</li>
+            <li><strong>Public Communication:</strong> Build awareness about infection risks and encourage compliance.</li>
+            <li><strong>Global Coordination:</strong> Facilitate collaboration between nations to share vaccines and resources.</li>
+          </ul>
+
+          <h4 class="mt-4">How to Use</h4>
+          <ol>
+            <li>Open the Tableau dashboard (use the <strong>Dashboard Link</strong> at the top of this page).</li>
+            <li>Interact with filters (continent, country).</li>
+            <li>Explore infection percentages across regions and observe trends over time.</li>
+            <li>Review forecasts to anticipate future case loads.</li>
+          </ol>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Vendor JS Files -->
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="../assets/vendor/php-email-form/validate.js"></script>
+<script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="../assets/vendor/counterup/counterup.min.js"></script>
+<script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="../assets/vendor/venobox/venobox.min.js"></script>
+
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
